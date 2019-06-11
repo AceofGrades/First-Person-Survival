@@ -9,6 +9,7 @@ TagManager:
   - DoorTrigger
   - Wall
   - Enemy
+  - Pick Up
   layers:
   - Default
   - TransparentFX
