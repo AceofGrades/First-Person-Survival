@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Enemy
   - Pick Up
+  - Bullet
   layers:
   - Default
   - TransparentFX
