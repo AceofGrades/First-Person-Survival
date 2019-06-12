@@ -11,20 +11,16 @@ using UnityEngine;
 public class Flashlight : MonoBehaviour
 {
     public Light flashlight;
-    public AudioSource myFx;
-    public AudioClip switchFx;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F) && flashlight.enabled == false)
         {
             flashlight.enabled = true;
-            AudioSource.PlayClipAtPoint(switchFx, transform.position);
         }
         else if (Input.GetKeyDown(KeyCode.F) && flashlight.enabled == true)
         {
             flashlight.enabled = false;
-            AudioSource.PlayClipAtPoint(switchFx, transform.position);
         }
     }
 }
