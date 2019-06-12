@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public float jumpHeight = 15f;
     public LayerMask groundLayer;
     public float groundRayDistance = 1.1f;
+  
+
 
     private CharacterController controller;
     private Vector3 motion;
@@ -24,6 +26,7 @@ public class Player : MonoBehaviour
     {
         speed = walkSpeed;
         controller = GetComponent<CharacterController>();
+
     }
 
     // Update is called once per frame
