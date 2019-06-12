@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float inputH = Input.GetAxis("Horizontal");
-        float inputV = Input.GetAxis("Vertical");
+        float inputH = Input.GetAxisRaw("Horizontal");
+        float inputV = Input.GetAxisRaw("Vertical");
         bool inputJump = Input.GetButtonDown("Jump");
 
         Vector3 normalized = new Vector3(inputH, 0f, inputV);

@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
     public float speed = 10f;
     public GameObject effectsPrefab;
     public Transform line;
+    public AudioSource weaponFx;
+    public AudioClip bulletFx;
 
     private Rigidbody rigid;
 
@@ -33,7 +35,7 @@ public class Bullet : MonoBehaviour
         // Instantiate(effectsPrefab, contact.point, Quaternion.LookRotation(contact.normal));
         // Destroy bullet
         Destroy(gameObject);
-
+        AudioSource.PlayClipAtPoint(bulletFx, transform.position, 0.5f);
     }
 
     public void Fire(Vector3 lineOrigin, Vector3 direction)
