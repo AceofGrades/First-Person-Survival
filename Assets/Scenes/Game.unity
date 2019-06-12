@@ -2631,7 +2631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minWaitTime: 0.1
-  maxWaitTime: 0.6
+  maxWaitTime: 0.4
 --- !u!1 &515418117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1943862353032631004, guid: 6c737fd854a160c44856a623d73406fb,
@@ -6703,7 +6703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minWaitTime: 0.1
-  maxWaitTime: 0.6
+  maxWaitTime: 0.5
 --- !u!1 &1418780363
 GameObject:
   m_ObjectHideFlags: 0
@@ -9235,7 +9235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minWaitTime: 0.1
-  maxWaitTime: 0.6
+  maxWaitTime: 0.5
 --- !u!1 &1861496375
 GameObject:
   m_ObjectHideFlags: 0
