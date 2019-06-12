@@ -5,6 +5,8 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     public float speed;
+    public AudioSource myFx;
+    public AudioClip cardFx;
 
     void Start()
     {
@@ -24,6 +26,7 @@ public class PickUp : MonoBehaviour
         if (other.gameObject.CompareTag("Pick Up"))
         {
             other.gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(cardFx, transform.position, 1f);
         }
     }
 }
