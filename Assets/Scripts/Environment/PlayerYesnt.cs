@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerYesnt : MonoBehaviour
 {
-    public AudioSource myFx;
+    public AudioSource deadFx;
     public AudioClip pdeathFx;
     public GameObject player;
 
@@ -14,6 +14,7 @@ public class PlayerYesnt : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(player);
+            AudioSource.PlayClipAtPoint(pdeathFx, transform.position, .5f);
         }
     }
 }
