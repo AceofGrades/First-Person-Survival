@@ -14,8 +14,7 @@ public class PlayerYesnt : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Destroy(player);
-            AudioSource.PlayClipAtPoint(pdeathFx, transform.position, .5f);
+            SceneManager.LoadScene(2);
         }
     }
 }
