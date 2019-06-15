@@ -8,16 +8,16 @@ public class PickUp : MonoBehaviour
     public float speed;
     public AudioSource myFx;
     public AudioClip cardFx;
+    public Text countText;
+    public Text escapeText;
 
     private int Keycards;
-    public Text countText;
-
-
 
     void Start()
     {
         Keycards = 0;
         SetCountText();
+        escapeText.text = "";
     }
 
     void FixedUpdate()
@@ -42,5 +42,9 @@ public class PickUp : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Keycards: " + Keycards.ToString();
+        if(Keycards == 1)
+        {
+            escapeText.text = "You've found the keycard! Time to escape!";
+        }
     }
 }
