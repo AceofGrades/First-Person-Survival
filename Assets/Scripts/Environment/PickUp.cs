@@ -10,6 +10,7 @@ public class PickUp : MonoBehaviour
     public AudioClip cardFx;
     public Text countText;
     public Text escapeText;
+    public Time duration;
 
     private int Keycards;
 
@@ -45,6 +46,8 @@ public class PickUp : MonoBehaviour
         if(Keycards == 1)
         {
             escapeText.text = "You've found the keycard! Time to escape!";
+            escapeText.CrossFadeAlpha(0, 10f, false);
         }
     }
+    
 }
