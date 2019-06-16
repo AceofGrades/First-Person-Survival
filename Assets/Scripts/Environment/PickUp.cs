@@ -43,9 +43,9 @@ public class PickUp : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Keycards: " + Keycards.ToString();
-        if(Keycards == 1)
+        if(Keycards == 2)
         {
-            escapeText.text = "You've found the keycard! Time to escape!";
+            escapeText.text = "You've found the keycards! Time to escape!";
             escapeText.CrossFadeAlpha(0, 10f, false);
         }
     }
