@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Pick Up
   - Bullet
+  - Ammo
   layers:
   - Default
   - TransparentFX
