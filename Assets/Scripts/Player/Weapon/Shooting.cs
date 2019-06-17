@@ -6,7 +6,6 @@ public class Shooting : MonoBehaviour
 {
     public Weapon currentWeapon;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +24,7 @@ public class Shooting : MonoBehaviour
                 if (currentWeapon.canShoot)
                 {
                     currentWeapon.Shoot();
+                    
                 }
             }
         }

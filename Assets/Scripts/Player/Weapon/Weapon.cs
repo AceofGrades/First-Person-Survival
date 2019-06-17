@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -9,16 +10,22 @@ public class Weapon : MonoBehaviour
     public Transform shotorigin;
     public GameObject bulletPrefab;
     public bool canShoot = false;
-    
-    
+    public bool takeBullets;
 
-    private int currentReserve = 0, currentClip = 0;
+    public static Text ammoText;
+
+    public static int currentClip = 0;
+
+
+    private int currentReserve = 0;
     private float shootTimer = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
         Reload();
+        ammoText = GameObject.Find("Bullet Count").GetComponent<Text>();
+        UpdateBullets(0);
     }
 
     // Update is called once per frame
@@ -27,7 +34,7 @@ public class Weapon : MonoBehaviour
         
         // Increase the shoot timer
         shootTimer += Time.deltaTime;
-        // Check if the shiit timer reaches the rate
+        // Check if the shoot timer reaches the rate
         if (shootTimer >= shootRate)
         {
             // Can Shoot!
@@ -59,20 +66,29 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        // Reduce clip size
-        currentClip--;
-        // Reset shoot timer
-        shootTimer = 0f;
-        // Reset canShoot
-        canShoot = false;
-        // Get origin + direction of fire
-        Camera attachedCamera = Camera.main;
-        Transform camTransform = attachedCamera.transform;
-        Vector3 lineOrigin = shotorigin.position;
-        Vector3 direction = camTransform.forward;
-        // Shoot bullet
-        GameObject clone = Instantiate(bulletPrefab, camTransform.position, camTransform.rotation);
-        Bullet bullet = clone.GetComponent<Bullet>();
-        bullet.Fire(lineOrigin, direction);
+        if (currentClip > 0)
+        {
+            // Reset shoot timer
+            shootTimer = 0f;
+            // Reset canShoot
+            canShoot = false;
+            // Get origin + direction of fire
+            Camera attachedCamera = Camera.main;
+            Transform camTransform = attachedCamera.transform;
+            Vector3 lineOrigin = shotorigin.position;
+            Vector3 direction = camTransform.forward;
+            // Shoot bullet
+            GameObject clone = Instantiate(bulletPrefab, camTransform.position, camTransform.rotation);
+            Bullet bullet = clone.GetComponent<Bullet>();
+            bullet.Fire(lineOrigin, direction);
+
+            UpdateBullets(-1);
+        }
+    }
+
+    public static void UpdateBullets(int amount)
+    {
+        currentClip += amount;
+        ammoText.text = "Bullets: " + currentClip.ToString();
     }
 }
