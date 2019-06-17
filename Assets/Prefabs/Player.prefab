@@ -727,6 +727,7 @@ MonoBehaviour:
   cardFx: {fileID: 8300000, guid: 753ccb0368a8f90459fe702b997637d9, type: 3}
   countText: {fileID: 0}
   escapeText: {fileID: 0}
+  escapePod: {fileID: 0}
 --- !u!1 &1943993142184449248
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +872,7 @@ GameObject:
   - component: {fileID: 6326484821522902643}
   - component: {fileID: 6326484821522902646}
   - component: {fileID: 6326484821522902647}
+  - component: {fileID: 781785862}
   m_Layer: 10
   m_Name: Camera
   m_TagString: MainCamera
@@ -1050,6 +1052,19 @@ MonoBehaviour:
   outlineShaderMaterial: {fileID: 0}
   renderTexture: {fileID: 0}
   extraRenderTexture: {fileID: 0}
+--- !u!114 &781785862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326484821522902642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240c526c7605fb24a8a2ac9ea67e4b4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 2800000, guid: 2d1c8d5f2d3566f41afd046116d7d0e7, type: 3}
 --- !u!1001 &1943993142734098576
 PrefabInstance:
   m_ObjectHideFlags: 0
