@@ -48,7 +48,7 @@ public class PickUp : MonoBehaviour
         {
             escapeText.text = "You've found the keycards! Time to escape!";
             escapeText.CrossFadeAlpha(0, 10f, false);
-            escapePod.position = new Vector3(314, 4.8f, 320);
+            escapePod.position = new Vector3(97.7f, 1.39f, 100f);
         }
     }
 }
