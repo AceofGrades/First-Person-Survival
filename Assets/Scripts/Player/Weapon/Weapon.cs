@@ -25,6 +25,7 @@ public class Weapon : MonoBehaviour
     {
         Reload();
         ammoText = GameObject.Find("Bullet Count").GetComponent<Text>();
+        currentClip = 0;
         UpdateBullets(0);
     }
 

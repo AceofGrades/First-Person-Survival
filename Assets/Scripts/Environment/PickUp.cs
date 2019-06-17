@@ -20,6 +20,7 @@ public class PickUp : MonoBehaviour
         Keycards = 0;
         SetCountText();
         escapeText.text = "";
+        SetAmmoText();
     }
 
     void FixedUpdate()
@@ -39,6 +40,17 @@ public class PickUp : MonoBehaviour
             Keycards = Keycards + 1;
             SetCountText();
         }
+
+        if (other.gameObject.CompareTag("Ammo"))
+        {
+            other.gameObject.SetActive(false);
+            SetAmmoText();
+        }
+    }
+
+    void SetAmmoText()
+    {
+        Weapon.UpdateBullets(10);
     }
 
     void SetCountText()

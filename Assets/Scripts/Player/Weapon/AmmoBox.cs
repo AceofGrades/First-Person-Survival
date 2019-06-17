@@ -16,7 +16,9 @@ public class AmmoBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Ammo"))
+        Debug.Log(other.tag);
+        //if(other.gameObject.CompareTag("Ammo"))
+        if (other.tag == "Ammo")
         {
             other.gameObject.SetActive(false);
             SetAmmoText();
