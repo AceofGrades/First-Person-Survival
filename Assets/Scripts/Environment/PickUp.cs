@@ -11,6 +11,7 @@ public class PickUp : MonoBehaviour
     public Text countText;
     public Text escapeText;
     public Time duration;
+    public Transform escapePod;
 
     private int Keycards;
 
@@ -47,7 +48,7 @@ public class PickUp : MonoBehaviour
         {
             escapeText.text = "You've found the keycards! Time to escape!";
             escapeText.CrossFadeAlpha(0, 10f, false);
+            Instantiate(escapePod, new Vector3(98, 0.5f, 99), Quaternion.identity);
         }
     }
-    
 }
