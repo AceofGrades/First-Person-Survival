@@ -5,7 +5,6 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public Weapon currentWeapon;
-    public int ammoCount;
 
     // Start is called before the first frame update
     void Start()
