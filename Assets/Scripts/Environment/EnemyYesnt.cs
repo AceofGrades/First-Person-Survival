@@ -25,7 +25,7 @@ public class EnemyYesnt : MonoBehaviour
         if(other.tag == "Bullet")
         {
             Destroy(enemy);
-            AudioSource.PlayClipAtPoint(deathFx, transform.position, 0.25f);
+            AudioSource.PlayClipAtPoint(deathFx, transform.position, 2f);
         }
     }
 }
