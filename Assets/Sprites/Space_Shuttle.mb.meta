@@ -23,7 +23,42 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: e973e31e5739a514690b65e2498960f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottom_Exhausts
+    second: {fileID: 2100000, guid: e973e31e5739a514690b65e2498960f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corridor
+    second: {fileID: 2100000, guid: e973e31e5739a514690b65e2498960f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Thrusters
+    second: {fileID: 2100000, guid: e973e31e5739a514690b65e2498960f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Top_Exhausts
+    second: {fileID: 2100000, guid: e973e31e5739a514690b65e2498960f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: e973e31e5739a514690b65e2498960f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: e973e31e5739a514690b65e2498960f4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
