@@ -14,5 +14,9 @@ public class PlayerYesnt : MonoBehaviour
         {
             SceneManager.LoadScene(3);
         }
+        if (other.gameObject.tag == "Zomling")
+        {
+            SceneManager.LoadScene(5);
+        }
     }
 }

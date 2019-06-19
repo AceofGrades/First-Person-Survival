@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameWin.unity
     guid: ec0e88db119b21441ac50dd3ae27624b
+  - enabled: 1
+    path: Assets/Scenes/SterlingOver.unity
+    guid: e0a469da02f42684f86d78a121eab827
   m_configObjects: {}
