@@ -9,7 +9,7 @@ public class Escape : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(4);
         }
     }
 }
