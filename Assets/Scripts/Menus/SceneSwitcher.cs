@@ -5,13 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
+    public bool stirlingMode = false;
+
     public void GotoGameScene()
     {
-        SceneManager.LoadScene(1);
+        if (stirlingMode == false)
+        {
+            SceneManager.LoadScene(1);
+        }
+        if (stirlingMode == true)
+        {
+            SceneManager.LoadScene(3);
+        }
+
     }
 
     public void GotoTitleScene()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void GotoSterlingScene()
+    {
+        SceneManager.LoadScene(3);
+        stirlingMode = true;
     }
 }

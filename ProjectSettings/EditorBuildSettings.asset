@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 705e0554a5c1f454a8d27c983ecb227f
+  - enabled: 1
+    path: Assets/Scenes/SterlingMode.unity
+    guid: cdc2073ed8cb710448cc8764aed26e4b
   m_configObjects: {}
