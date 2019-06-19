@@ -12,7 +12,7 @@ public class PlayerYesnt : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 }

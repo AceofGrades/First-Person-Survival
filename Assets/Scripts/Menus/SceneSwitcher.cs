@@ -15,7 +15,7 @@ public class SceneSwitcher : MonoBehaviour
         }
         if (stirlingMode == true)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
 
     }
@@ -27,7 +27,7 @@ public class SceneSwitcher : MonoBehaviour
 
     public void GotoSterlingScene()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
         stirlingMode = true;
     }
 }
