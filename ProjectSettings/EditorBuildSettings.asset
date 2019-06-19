@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game.unity
     guid: b675495a6b6d88545951558af840792b
   - enabled: 1
-    path: Assets/Scenes/StirlingMode.unity
+    path: Assets/Scenes/SterlingMode.unity
     guid: cdc2073ed8cb710448cc8764aed26e4b
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
@@ -21,9 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameWin.unity
     guid: ec0e88db119b21441ac50dd3ae27624b
   - enabled: 1
-    path: Assets/Scenes/StirlingOver.unity
+    path: Assets/Scenes/SterlingOver.unity
     guid: e0a469da02f42684f86d78a121eab827
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StirlingWin.unity
     guid: 621a3309245db0647996ef89e70922d9
   m_configObjects: {}
