@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1095574848}
   - component: {fileID: 1095574849}
   m_Layer: 14
-  m_Name: Enemy
+  m_Name: Zomling
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
