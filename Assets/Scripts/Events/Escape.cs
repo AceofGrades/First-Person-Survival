@@ -11,5 +11,9 @@ public class Escape : MonoBehaviour
         {
             SceneManager.LoadScene(4);
         }
+        if(other.gameObject.tag == "Stirling")
+        {
+            SceneManager.LoadScene(6);
+        }
     }
 }
