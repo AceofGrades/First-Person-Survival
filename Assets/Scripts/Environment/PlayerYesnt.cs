@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerYesnt : MonoBehaviour
 {
-    public AudioSource deadFx;
-    public AudioClip pdeathFx;
     public GameObject player;
 
     // Start is called before the first frame update

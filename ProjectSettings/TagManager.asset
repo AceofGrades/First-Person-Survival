@@ -12,6 +12,7 @@ TagManager:
   - Pick Up
   - Bullet
   - Ammo
+  - MirrorCrate
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Trigger
   - Enemy
   - Highlight
-  - 
+  - MirrorCrate
   - 
   - 
   - 
