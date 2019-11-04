@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyRepswan : MonoBehaviour
 {
-
+    public Transform target;
     public GameObject enemy; // The enemy prefab to be spawned
     public float spawnTime = 3f;   // How long between each spawn
     public Transform[] spawnPoints; // An array of the spawn points this enemy can be spawn from
@@ -15,7 +15,7 @@ public class EnemyRepswan : MonoBehaviour
         InvokeRepeating("Spawn", spawnTime, spawnTime);
     }
 
-    void Spawn()
+    public void Spawn()
     {
 
 
@@ -23,7 +23,9 @@ public class EnemyRepswan : MonoBehaviour
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
 
         // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation
-        Instantiate(enemy, transform.position + new Vector3(Random.Range(-7.5f, 7.5f), 1f, Random.Range(-7.5f, 7.5f)), Quaternion.identity);
+        GameObject clone = Instantiate(enemy, transform.position + new Vector3(Random.Range(-7.5f, 7.5f), 1f, Random.Range(-7.5f, 7.5f)), Quaternion.identity);
+        Enemy enemyScript = clone.GetComponent<Enemy>();
+        enemyScript.target = target;
     }
 }
 
