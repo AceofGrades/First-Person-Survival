@@ -12,12 +12,13 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        target = GameObject.Find("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //agent.SetDestination(target.position);
+        agent.SetDestination(target.position);
     }
 
 }

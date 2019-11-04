@@ -90,6 +90,6 @@ public class Weapon : MonoBehaviour
     public static void UpdateBullets(int amount)
     {
         currentClip += amount;
-       // ammoText.text = "Bullets: " + currentClip.ToString();
+        ammoText.text = "Bullets: " + currentClip.ToString();
     }
 }
