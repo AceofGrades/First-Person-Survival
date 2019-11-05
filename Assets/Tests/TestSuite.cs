@@ -30,7 +30,7 @@ public class TestSuite
 
     //2 
     [UnityTest]
-    public IEnumerator Player()
+    public IEnumerator PlayerExistsInScene()
     {
         Player player = game.GetComponentInChildren<Player>();
         yield return null;
@@ -43,7 +43,20 @@ public class TestSuite
         Flashlight flashlight = game.GetComponentInChildren<Flashlight>();
         yield return null;
     }
-    
+    //4
+    //[UnityTest]
+    //public IEnumerator GravityIsAThing()
+    //{
+    //    GameObject playerPrefab = Resources.Load<GameObject>("Prefabs/Player");
+    //   GameObject clone = Object.Instantiate(playerPrefab);
+    //    Vector3 testpos = new Vector3(0, 1, 0);
+    //    clone.transform.position =testpos;
+    //    float prevpos = clone.transform.position.y;
+    //    yield return new WaitForEndOfFrame();
+    //    yield return new WaitForFixedUpdate();
+    //     float newpos = clone.transform.position.y;
+    //   Assert.IsTrue(newpos > prevpos);
+    //}
     [TearDown]
     public void TearDown()
     {
