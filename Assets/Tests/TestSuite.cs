@@ -20,9 +20,12 @@ public class TestSuite
     
     // 1
     [UnityTest]
+    // Checks to see if the enemy exists in the scene
     public IEnumerator EnemyExistsInScene()
     {
+        // Checks if the enmy spawns in the scene
         enemySpawner.Spawn();
+        // Waits until the end of the frame
         yield return new WaitForEndOfFrame();
         Enemy enemy = Object.FindObjectOfType<Enemy>();
         Assert.IsNotNull(enemy);
@@ -30,17 +33,22 @@ public class TestSuite
 
     //2 
     [UnityTest]
+    // Checks to see if the player exists in the scene
     public IEnumerator PlayerExistsInScene()
     {
         Player player = game.GetComponentInChildren<Player>();
         yield return null;
+        Assert.IsNotNull(player);
     }
 
     //3
     [UnityTest]
+    // Checks to see if the flashlight turns on & off 
     public IEnumerator FlashlightGetTurnedOnAndOff()
     {
+        Player player = game.GetComponentInChildren<Player>();
         Flashlight flashlight = game.GetComponentInChildren<Flashlight>();
+        
         yield return null;
     }
     //4
